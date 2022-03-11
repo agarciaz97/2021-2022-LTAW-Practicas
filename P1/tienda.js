@@ -1,5 +1,5 @@
 const http = require('http');
-const fs = rquire('fs');
+const fs = require('fs');
 
 const PUERTO = 9090;
 
