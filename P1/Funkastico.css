@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Naruto;
+    src: url(njnaruto.ttf);
+}
+
+#lateralizquierdo{
+    float: left;
+    height: 200px;
+    width: 600px;
+    transform: rotate(-90deg);
+    margin-top: 150px;
+    margin-left: -50px;
+}
+
+#lateralderecho{
+    float: right;
+    height: 200px;
+    width: 600px;
+    transform: rotate(90deg);
+    margin-top: 150px;
+    margin-right: -50px;
+}
+
+.principal{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+#cabecera{
+    display: block;
+    font-family: Naruto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -30px;
+    color: orange;
+}
+
+p{
+    font-size: 10px;
+    margin-top: -40px;
+    color: rgb(25, 95, 175);
+}
+
+.descuento{
+    text-align: center;
+}
+
+.Productos{
+    display:block;
+    text-align: center;
+    margin-top: 150px;
+}
+#imagen1{
+    margin-top: 30px;
+    height: 400px;
+    width: 600px;
+}
+
+.imagen{
+    height: 150px;
+    width: 200px;
+    margin-right: 40px;
+}
+
+.enlaces{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#enlace1{
+    margin-right: 80px;
+}
+#enlace2{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+#enlace3{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#enlace4{
+    margin-left: 70px;
+}
