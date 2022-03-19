@@ -10,14 +10,14 @@ h2{
     font-family: Naruto;
     color: orange;
 }
-#Funkopop{
+#Funkosoda{
     margin-top: 80px;
     width:1500px;
     left:0px;
     position:absolute;
     z-index:0;
 } 
-#Funkopop>div {
+#Funkosoda>div {
     float: left;
     height: 203px;
     margin-left: 235px;
