@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Naruto;
+    src: url(njnaruto.ttf);
+}
+body{
+    background-color: lightskyblue;
+}
+h2{
+    text-align: center;
+    font-family: Naruto;
+    color: orange;
+}
+#Keychains{
+    margin-top: 80px;
+    width:1500px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+} 
+#Keychains>div {
+    float: left;
+    height: 203px;
+    margin-left: 235px;
+    margin-right: none;
+    width: 195px;
+    text-align:center;
+}
+
+.imagen{
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
