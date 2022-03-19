@@ -23,7 +23,7 @@ body{
     margin-right: -50px;
 }
 
-.principal{
+#principal{
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
@@ -44,11 +44,11 @@ p{
     color: rgb(25, 95, 175);
 }
 
-.descuento{
+#descuento{
     text-align: center;
 }
 
-.Productos{
+#Productos{
     display:block;
     text-align: center;
     margin-top: 100px;
@@ -73,7 +73,7 @@ h2{
     margin-right: 40px;
 }
 
-.enlaces{
+#enlaces{
     text-align: center;
     margin-top: 10px;
 }
