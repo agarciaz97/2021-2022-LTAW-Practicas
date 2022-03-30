@@ -13,18 +13,22 @@ const server = http.createServer((req, res) => {
   const url = new URL(req.url, 'http://' + req.headers['host']);
   console.log(url.pathname);
 
-  let recurso = "";
-  //-- El recurso será la página principal
-  if (url.pathname == '/') {
-     recurso = "Funkastico.html";
-  }else{
-    recurso = url.pathname.substring(1);
-  }
-  console.log("Recurso: " + recurso);
+  //-- Variable para guardar el archivo solicitado
+  let archivo = "";
 
-  //-- Nos quedamos con la extensión del archivo del recurso solicitado
-  let extension = recurso.split('.')[1];
-  console.log("Extension del archivo: " + extension);
+  //-- El archivo solicitado será la página principal
+  if (url.pathname == '/') {
+     archivo = "Funkastico.html";
+  //-- El archivo solicitado comienza a partir del /
+  }else{
+    archivo = url.pathname.substring(1);
+  }
+
+  //-- Se muestra el archivo solicitado en la consola
+  console.log("Archivo: " + archivo);
+
+  //-- Nos quedamos con la extensión del archivo solicitado
+  let extension = archivo.split('.')[1];
 
   //-- Tipo de archivo pedido 
   //-- en función de su extensión
@@ -37,17 +41,19 @@ const server = http.createServer((req, res) => {
     ttf : "font/ttf"
   };
 
-  //-- se guarda el tipo de archivo
-  //-- en la variable mime
+  /* se guarda el tipo de archivo
+   en la variable mime y se muestra
+   en la consola */
   let mime = tipomime[extension];
   console.log("Tipo mime: " + mime);
 
   //-- Leemos el archivo del recurso solicitado 
-  fs.readFile(recurso, (err,data) => {
+  fs.readFile(archivo, (err,data) => {
     //-- Si se produce un error
-    if ((err) || (recurso == 'error.html')){
+    if ((err) || (archivo == 'error.html')){
       res.writeHead(400, {'Content-type' : mime});
       console.log("El archivo solicitado no se puede encontrar");
+    //-- En caso de que no se produzca ningín error
     }else{
       res.writeHead(200, {'Content-type' : mime});
       console.log("Petición correcta, 200 OK");
