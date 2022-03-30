@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
   if (url.pathname == '/') {
      recurso = "Funkastico.html";
   }else{
-    recurso = url.pathname;
+    recurso = url.pathname.substring(1);
   }
   console.log("Recurso: " + recurso);
 
@@ -33,7 +33,8 @@ const server = http.createServer((req, res) => {
     css : "text/css",
     jpg : "image/jpg",
     png : "image/png",
-    ico : "image/x-icon"
+    ico : "image/x-icon",
+    ttf : "font/ttf"
   };
 
   //-- se guarda el tipo de archivo
@@ -44,11 +45,11 @@ const server = http.createServer((req, res) => {
   //-- Leemos el archivo del recurso solicitado 
   fs.readFile(recurso, (err,data) => {
     //-- Si se produce un error
-    if((err) || (recurso == 'error.html')){
-      res.writeHead(400, {'Content-type' : 'mime'});
+    if ((err) || (recurso == 'error.html')){
+      res.writeHead(400, {'Content-type' : mime});
       console.log("El archivo solicitado no se puede encontrar");
     }else{
-      res.writeHead(200, {'Content-type' : 'mime'});
+      res.writeHead(200, {'Content-type' : mime});
       console.log("Petición correcta, 200 OK");
     }
 
