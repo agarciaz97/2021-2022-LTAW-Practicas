@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const { text } = require('stream/consumers');
 
 const PUERTO = 9090;
 
@@ -50,15 +51,18 @@ const server = http.createServer((req, res) => {
   //-- Leemos el archivo del recurso solicitado 
   fs.readFile(archivo, (err,data) => {
     //-- Si se produce un error
-    if ((err) || (archivo == 'error.html')){
-      res.writeHead(400, {'Content-type' : mime});
+    if (err){
+      archivo = "error.html";
+      contenido = fs.readFileSync(archivo, 'utf-8');
+      res.writeHead(400, {'Content-type' : 'text/html'});
       console.log("El archivo solicitado no se puede encontrar");
+      res.write(contenido);
+      res.end();
     //-- En caso de que no se produzca ningín error
     }else{
       res.writeHead(200, {'Content-type' : mime});
       console.log("Petición correcta, 200 OK");
     }
-
     //-- Enviar los datos 
     res.write(data);
     res.end();
