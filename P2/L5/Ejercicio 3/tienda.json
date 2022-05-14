@@ -1,0 +1,48 @@
+[
+    {
+        "Productos":[
+                        {
+                            "Nombre": "Funko pop",
+                            "Cantidad": 10
+                        },
+                        {
+                            "Nombre": "Funko soda",
+                            "Cantidad": 9
+                        },
+                        {
+                            "Nombre": "LLaveros funko pop",
+                            "Cantidad": 12
+                        },
+                        {
+                            "Nombre": "Mystery minis",
+                            "Cantidad": 20
+                        }
+                    ]              
+    },
+
+    {
+        "Usuarios": [
+                        {   "Usuario": "Pepito89",
+                            "Nombre": "Pepe Pérez",
+                            "e-mail": "Pepitoperez@gmail.com"
+                        },
+                        {
+                            "Usuario": "Rodolfete",
+                            "Nombre": "Rodolfo Suárez",
+                            "e-mail": "RoSu777@gmail.com"
+                        }
+                    ]
+    },
+    {
+        "Pedidos": [
+                        {
+                            "Pedido": 2394949,
+                            "Comprador": "Pepito89",
+                            "Productos": "Funko pop",
+                            "Nombre productos": "Funko pop Luke Skywalker",
+                            "Cantidad": 1
+
+                        }
+        ]
+    }
+]
