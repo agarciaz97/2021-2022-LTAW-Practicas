@@ -1,0 +1,99 @@
+[
+    {
+        "Productos": [
+                        {
+                            "Funko Pop": [
+                                            {
+                                                "Nombre": "Funko pop Luke Skywalker",
+                                                "Cantidad": 10
+                                            },
+                                            {
+                                                "Nombre": "Funko pop Darth Vader",
+                                                "Cantidad": 10
+                                            },
+                                            {
+                                                "Nombre": "Funko pop Obi Wan Kenobi",
+                                                "Cantidad": 10
+                                            }
+                                         ]
+                        },
+                        {
+                            "Funko soda": [
+                                            {
+                                                "Nombre": "Funko soda Spider-man No way home",
+                                                "Cantidad": 3
+                                            },
+                                            {
+                                                "Nombre": "Funko soda George Sanderson",
+                                                "Cantidad": 3
+                                            },
+                                            {
+                                                "Nombre": "Funko soda Hades",
+                                                "Cantidad": 3
+                                            }
+                                         ]
+                        },
+                        {
+                            "LLaveros Funko pop": [
+                                                    {
+                                                        "Nombre": "Llavero Jon Snow",
+                                                        "Cantidad": 4
+                                                    },
+                                                    {
+                                                        "Nombre": "Llavero Harry Potter",
+                                                        "Cantidad": 4
+                                                    },
+                                                    {
+                                                        "Nombre": "Llavero Annie Leonhart",
+                                                        "Cantidad": 4
+                                                    }
+                                                 ]
+                        },
+                        {
+                            "Mystery minis": [
+                                                {
+                                                    "Nombre": "Star Wars",
+                                                    "Cantidad": 5
+                                                },
+                                                {
+                                                    "Nombre": "retro",
+                                                    "Cantidad":5
+                                                },
+                                                {
+                                                    "Nombre": "Pixar",
+                                                    "Cantidad": 5
+                                                }
+                                             ]
+                        }
+
+
+                     ]
+                     
+    },
+
+    {
+        "Usuarios": [
+                        {   "Usuario": "Pepito89",
+                            "Nombre": "Pepe Pérez",
+                            "e-mail": "Pepitoperez@gmail.com"
+                        },
+                        {
+                            "Usuario": "Rodolfete",
+                            "Nombre": "Rodolfo Suárez",
+                            "e-mail": "RoSu777@gmail.com"
+                        }
+                    ]
+    },
+    {
+        "Pedidos": [
+                        {
+                            "Pedido": 2394949,
+                            "Comprador": "Pepito89",
+                            "Productos": "Funko pop",
+                            "Nombre productos": "Funko pop Luke Skywalker",
+                            "Cantidad": 1
+
+                        }
+        ]
+    }
+]
